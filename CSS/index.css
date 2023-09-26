@@ -1,0 +1,147 @@
+* {
+    padding: 0% !important;
+    margin: 0% !important;
+    box-sizing: border-box !important;
+    font-family: 'Nunito', 'Serif';
+}
+
+body {
+    height: 100vh auto;
+    padding: 0% !important;
+    margin: 0% !important;
+    box-sizing: border-box !important;
+    background-image: url('https://cdn.euroinnova.edu.es/img/subidasEditor/software-developer-6521720_640-1637282571.webp');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+    /*   background-attachment: fixed; */
+}
+
+header {
+    background: rgb(0, 0, 0, 0.9) !important;
+    width: 100%;
+    height: 80px !important;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>h1 {
+    color: white !important;
+}
+
+main {
+    top: auto;
+    background: rgb(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh auto !important;
+
+    z-index: 2;
+    position: absolute;
+}
+
+#particles-js {
+    padding-top: 30px;
+    z-index: -1 !important;
+    width: 100%;
+    height: 100vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative !important;
+}
+
+#perfil {
+    top: 50px;
+    width: 16em !important;
+    height: 500px;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: holograma 5s;
+
+}
+
+@keyframes holograma {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#perfil>img {
+    width: 90%;
+    height: 50%;
+    margin-bottom: 20px;
+    border: 3px solid white;
+    border-radius: 20px;
+    filter: sepia(80%);
+}
+
+#trabajo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px !important;
+    width: 90%;
+}
+
+#codo {
+    margin-top: 5px;
+    color: orange;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 90%;
+}
+
+#box-link {
+    margin-top: 20px !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#box-link>a {
+    width: 90%;
+    padding: 7px 7px !important;
+    border: 3px solid white;
+    background: rgb(0, 0, 0, 0.6);
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    margin-top: 15px !important;
+    animation: titilar .1s infinite;
+
+    &:hover {
+        text-decoration: underline;
+        color: orangered;
+        box-shadow: 0 0 10px orangered, 0 0 20px orangered, 0 0 60px orangered !important;
+    }
+}
+
+#box-link>a>span {
+    color: orange;
+
+}
+
+@keyframes titilar {
+
+    from {
+        box-shadow: 0 0 2px white, 0 0 4px white, 0 0 8px white;
+    }
+
+    to {
+        box-shadow: 0 0 10px white, 0 0 20px white, 0 0 60px white;
+    }
+
+}
